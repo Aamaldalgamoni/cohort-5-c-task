@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 namespace ConsoleApp1
 {
     internal class Program
-    {
+    {     
+        //task1
         static string OddEvenNums(int num)
-        {
+        {    
             string result;
             if (num % 2 == 0)
             {
@@ -122,28 +123,143 @@ namespace ConsoleApp1
             }
         }
 
+        //task exby jana
+        //public static void jana()
+        //{
+        //    int x = 25;
+        //    for (int i = 2; i < x; i++)
+        //    {
+        //        if (x % i == 0)
+        //        {
+        //            Console.WriteLine("Not Prime");
+        //            break;
+        //        }
+        //        else
+        //        {
+
+        //            Console.WriteLine("prime");
+        //            break;
+
+        //        }
+        //    }
+        //}
+
+
+        // example by saja
+        //public static void jana()
+        //{
+        //    int x = 25;
+        //    for (int i = 2; i < x / 2; i++)
+        //    {
+        //        if (x % i == 0)
+        //        {
+        //            Console.WriteLine("Not Prime");
+        //            return;
+        //        }
+
+        //    }
+        //    Console.WriteLine("prime");
+        //}
 
 
 
+        // example by firas
+        //public static void Firas()
+        //{
+        //    int num = 7;
+
+        //    bool isPrime = false;
+        //    if (num % 2 == 0)  // Even
+
+        //        Console.WriteLine("Number not Prime ");
+
+        //    else if (num == 2) // ODD
+
+        //        Console.WriteLine("prime");
+
+        //    else
+        //    {
+        //        for (int i = 2; i < num; i++)
+        //        {
+        //            if (num % i == 0)
+        //            {
+        //                isPrime = false;
+        //                break;
+
+        //            }
+        //            else
+        //                isPrime = true;
+
+        //        }
+        //        if (isPrime == true)
+        //            Console.WriteLine("prime");
+        //        else
+        //            Console.WriteLine("Not prime");
+
+        //    }
+
+        //}
+
+
+        //example coach batool
+        //public static void printStars()
+        //{
+
+        //    for (int i = 0; i < 5; i++) // number of rows 
+        //    {
+
+        //        for (int j = 0; j < i; j++) // numbers of colo.
+        //        {
+        //            Console.Write("*");
+        //        }
+        //        Console.WriteLine();
+        //    }
+        //}
+        ////////////////////////////////////
+        //public static void printStars()
+        //{
+
+        //    int count = 1;
+
+
+        //    for (int i = 0; i < 5; i++) // number of rows 
+        //    {
+
+        //        for (int j = 0; j < i; j++) // numbers of colo.
+        //        {
+        //            Console.Write(count);
+        //            count++;
+        //        }
+        //        Console.WriteLine();
+        //    }
+
+
+        //}
 
 
 
         //class task
-        class hotelystem
-        {
-            public int roomNum;
-            public string roomtype;
-            public double price;
-            public bool isBooked;
-            public const string hotelName = "Grand Stay Hotel";
-        }
-
+        //class hotelystem
+        //{
+        //    public int roomNum;
+        //    public string roomtype;
+        //    public double price;
+        //    public bool isBooked;
+        //    public const string hotelName = "Grand Stay Hotel";
+        //}
+        //}
         static void Main(string[] args)
         {
+            //task exby jana
+            //jana();
+
+
+
+
             //task1
-            //Console.WriteLine("Enter a number");
-            //int num = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine(OddEvenNums(num));
+            Console.WriteLine("Enter a number");
+            int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(OddEvenNums(num));
 
 
             //task2
@@ -167,13 +283,22 @@ namespace ConsoleApp1
             //int arrlength = Convert.ToInt32(Console.ReadLine());
             //Console.WriteLine(largestNum(arrlength));
 
+
+
+
+
+
+
             //6
             //Console.WriteLine("Enter a number");
             //int row = Convert.ToInt32(Console.ReadLine());
             //Console.WriteLine(patternShap(5));
 
+
+
+
             //task7
-            //patternShap(5);
+            patternShap(5);
 
 
 
@@ -182,6 +307,7 @@ namespace ConsoleApp1
 
             //classTask
             //hotelystem room1 = new hotelystem();
+            //room1.roomNumber=ConvertToint32(console.readline()); here to make user insert data and we can do it for all fields.
             //room1.roomNum = 15;
             //room1.roomtype = "Single";
             //room1.price = 150.70;

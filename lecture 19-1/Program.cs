@@ -1,6 +1,7 @@
 ﻿
 
 using System;
+using System.Data.SqlTypes;
 using System.Xml;
 
 namespace lecture_19_1
@@ -9,7 +10,7 @@ namespace lecture_19_1
     {
 
         //1
-        static void firstmethod(int a,int b)
+        static void firstmethod(int a, int b)
         {
             if (a > b)
             {
@@ -31,14 +32,14 @@ namespace lecture_19_1
         }
 
         //3
-        static void thirdmethod(int t1,int t2)
+        static void thirdmethod(int t1, int t2)
         {
             int t3 = 60;
-            int t4 = (t1 * t3)+t2;
+            int t4 = (t1 * t3) + t2;
             Console.WriteLine($"Total:{t4}");
         }
-       //4
-       static void fourthmethod(int m)
+        //4
+        static void fourthmethod(int m)
         {
             int m1 = 60;
             int m2 = m / m1;
@@ -47,28 +48,30 @@ namespace lecture_19_1
         }
 
         //5
-        static void fifthmethod(double f1,double f2)
+        static void fifthmethod(double f1, double f2)
         {
             if (f1 == f2)
             {
                 Console.WriteLine("Equal");
-            }else if (f1 > f2)
+            }
+            else if (f1 > f2)
             {
                 Console.WriteLine("Greater");
-            }else if (f2 > f1)
+            }
+            else if (f2 > f1)
             {
                 Console.WriteLine("Smaller");
             }
         }
         //6
-        static void smethod(double s1,double s2,double s3)
+        static void smethod(double s1, double s2, double s3)
         {
             double sum = s1 + s2 + s3;
             Console.WriteLine($"Sum of digits:{sum}");
         }
 
         //7
-       static void semethod(int se,int see)
+        static void semethod(int se, int see)
         {
             if (se % see == 0)
             {
@@ -76,7 +79,7 @@ namespace lecture_19_1
             }
         }
         //8
-        static void vmethod(int v1,int v2,int v3)
+        static void vmethod(int v1, int v2, int v3)
         {
             if (v1 > v2 && v1 < v3)
             {
@@ -86,16 +89,18 @@ namespace lecture_19_1
             {
                 Console.WriteLine($"The middle value is:{v2}");
 
-            
-                
+
+
             }
-              else if (v3 > v1 && v3 < v2)
+            else if (v3 > v1 && v3 < v2)
             {
                 Console.WriteLine($"The middle value is:{v3}");
 
             }
         }
-        
+
+
+
 
         static void Main(string[] args)
         {
@@ -204,20 +209,40 @@ namespace lecture_19_1
             //}
 
             //12
-            //int se =Convert.ToInt32( Console.ReadLine());
+            //int se = Convert.ToInt32(Console.ReadLine());
             //int see = Convert.ToInt32(Console.ReadLine());
             //semethod(se, see);
 
 
             //13
 
-            int v1 = Convert.ToInt32 (Console.ReadLine());
-            int v2 = Convert.ToInt32(Console.ReadLine());
-            int v3 = Convert.ToInt32(Console.ReadLine());
+            //int v1 = Convert.ToInt32(Console.ReadLine());
+            //int v2 = Convert.ToInt32(Console.ReadLine());
+            //int v3 = Convert.ToInt32(Console.ReadLine());
 
-            vmethod(v1, v2, v3);
-
-
+            //vmethod(v1, v2, v3);
         }
     }
-}
+            //14
+
+            //        string v = Console.ReadLine();
+            //        for (int i = 0; i > v.Length; i++)
+            //        {
+            //            int count = 0;
+            //            if (v[i] == 'a' || v[i] == 'i' || v[i] == 'e' || v[i] == 'o' || v[i] == 'u')
+            //            {
+
+
+            //                int c = count();
+            //                count++;
+
+            //            }
+            //            Console.WriteLine(c);
+            //        }
+
+            //    }
+            //}
+        }
+
+
+
